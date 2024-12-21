@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Module Test</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Student Management</h1>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="QnA.html">QnA</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="input-container">
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" placeholder="Email" id="email">
+            <input type="text" placeholder="GPA" id="grade">
+            <input type="number" placeholder="Age" id="age">
+            <input type="text" placeholder="Degree" id="degree">
+        </div>
+
+        <button class="button" type="submit" id="submit" onclick="addStudent()">Add Student</button>
+        <h5 style="color: red;">*You Need To Enter The Details Above, <i>It's Responsive!</i>*</h5>
+    
+        <input class="search" type="text" id="search" onkeyup="search()" placeholder="Search By Name, email or Degree">
+
+        <table class="table" id="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Student Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>GPA</th>
+                    <th>Degree</th>
+                </tr>
+            </thead>
+    
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Student Management System. All rights reserved.</p>
+        <p>Developed by Dison Joseph B</p>
+        <p><a href="https://www.example.com/privacy-policy">Privacy Policy</a> | <a href="https://www.example.com/terms-of-service">Terms of Service</a></p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Student Management</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Student Management</h1>
+        <nav>
+            <ul>
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="QnA.html">QnA</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Login</h2>
+        <div class="input-container">
+            <input type="email" placeholder="Email" id="login-email" required>
+            <input type="password" placeholder="Password" id="login-password" required>
+        </div>
+        <button class="button" type="submit" id="login-submit" onclick="login()">Login</button>
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Student Management System. All rights reserved.</p>
+        <p>Developed by Dison Joseph B</p>
+        <p><a href="https://www.example.com/privacy-policy">Privacy Policy</a> | <a href="https://www.example.com/terms-of-service">Terms of Service</a></p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
